@@ -1,0 +1,66 @@
+GAR:
+  clothing:
+    alpha: 1.0
+    beta: 1.0
+    lr: 0.001
+    reg: 0.0001
+    scaling_alpha: 3.0
+  electronics:
+    alpha: 1.0
+    beta: 0.4
+    lr: 0.001
+    reg: 0.0001
+    scaling_alpha: 2.0
+  microlens:
+    alpha: 1.0
+    beta: 0.8
+    lr: 0.0005
+    reg: 0.0001
+    scaling_alpha: 5.0
+GoRec:
+  clothing:
+    dropout: 0.1
+    kl_coeff: 100
+    lr: 0.001
+    pre_cluster_num: 2000
+    reg: 0.0001
+    uni_coeff: 15.0
+    scaling_alpha: 2.5
+  electronics:
+    dropout: 0.1
+    kl_coeff: 5000
+    lr: 0.001
+    pre_cluster_num: 3000
+    reg: 0.001
+    uni_coeff: 15.0
+    scaling_alpha: 2.5
+  microlens:
+    dropout: 0.1
+    kl_coeff: 10
+    lr: 0.0001
+    pre_cluster_num: 2000
+    reg: 0.0001
+    uni_coeff: 10.0
+    scaling_alpha: 3.0
+Heater:
+  clothing:
+    alpha: 0.0001
+    lr: 0.0005
+    n_dropout: 0.2
+    n_expert: 7
+    reg: 0.0
+    scaling_alpha: 1.5
+  electronics:
+    alpha: 1.0e-05
+    lr: 0.001
+    n_dropout: 0.5
+    n_expert: 7
+    reg: 0.0001
+    scaling_alpha: 2.5
+  microlens:
+    alpha: 1.0e-05
+    lr: 0.001
+    n_dropout: 0.2
+    n_expert: 7
+    reg: 0.0001
+    scaling_alpha: 3.0
